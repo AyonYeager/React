@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+  width: 420px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  color: white;
+  
+  
+
+
+}
+
+.parent {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100vh;           /* Gives parent height to see vertical centering */
+}
+
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+input {
+  width: 100%;
+  padding: 14px 18px;
+  margin-top: 12px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-size: 16px;
+  transition: .3s;
+}
+
+input::placeholder {
+  color: rgba(255,255,255,.7);
+}
+
+input:focus {
+  background: rgba(255,255,255,.3);
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255,255,255,.3);
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #00d4ff;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background: #00b4d8;
+  box-shadow: 0 10px 25px rgba(0,212,255,.4);
+}
+
+button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.red {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.loading {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #00d4ff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.08);
+  }
+}
